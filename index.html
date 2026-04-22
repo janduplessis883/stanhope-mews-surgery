@@ -1,191 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vaccination FAQ | Stanhope Mews Surgery</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --bg: #ffffff;
-            --text-main: #1a1a1a;
-            --text-muted: #666666;
-            --accent: #005eb8;
-            --secondary: #f8f9fa;
-            --border: #eaeaea;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vaccination FAQ | Stanhope Mews Surgery</title>
 
-        * {
-            box-sizing: border-box;
-            -webkit-font-smoothing: antialiased;
-        }
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: var(--bg);
-            color: var(--text-main);
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-        }
+<style>
+:root {
+    --bg: #f3f4f6;
+    --card: #ffffff;
+    --text-main: #111827;
+    --text-muted: #6b7280;
+    --accent: #2563eb;
+    --border: #e5e7eb;
+}
 
-        .wrapper {
-            width: 100%;
-            max-width: 650px;
-            padding: 80px 24px;
-        }
+* {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
 
-        header {
-            margin-bottom: 64px;
-        }
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: var(--bg);
+    color: var(--text-main);
+    display: flex;
+    justify-content: center;
+    padding: 40px 16px;
+}
 
-        .brand {
-            font-weight: 600;
-            letter-spacing: -0.02em;
-            color: var(--accent);
-            text-transform: uppercase;
-            font-size: 0.75rem;
-            margin-bottom: 8px;
-            display: block;
-        }
+.container {
+    width: 100%;
+    max-width: 720px;
+    background: var(--card);
+    border-radius: 20px;
+    padding: 48px 32px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
 
-        h1 {
-            font-size: 2.5rem;
-            font-weight: 700;
-            letter-spacing: -0.04em;
-            margin: 0 0 16px 0;
-            line-height: 1.1;
-        }
+header {
+    margin-bottom: 40px;
+}
 
-        .intro {
-            font-size: 1.1rem;
-            color: var(--text-muted);
-            font-weight: 400;
-        }
+.brand {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 10px;
+    display: block;
+}
 
-        section {
-            margin-bottom: 48px;
-        }
+h1 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin: 0 0 12px;
+    line-height: 1.2;
+}
 
-        h2 {
-            font-size: 1.25rem;
-            font-weight: 600;
-            margin-bottom: 16px;
-            letter-spacing: -0.02em;
-        }
+.intro {
+    color: var(--text-muted);
+    font-size: 1rem;
+}
 
-        p {
-            margin-bottom: 24px;
-            font-weight: 400;
-            color: #333;
-        }
+section {
+    margin-bottom: 36px;
+}
 
-        .stat-card {
-            background-color: var(--secondary);
-            padding: 32px;
-            border-radius: 16px;
-            margin: 32px 0;
-            border: 1px solid var(--border);
-        }
+h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
 
-        .stat-card p {
-            margin: 0;
-            font-size: 0.95rem;
-            color: var(--text-main);
-        }
+p {
+    font-size: 0.95rem;
+    color: #374151;
+    margin-bottom: 16px;
+}
 
-        .stat-card strong {
-            display: block;
-            font-size: 1.5rem;
-            font-weight: 800;
-            color: var(--accent);
-            margin-bottom: 8px;
-            letter-spacing: -0.03em;
-        }
+.stat-card {
+    background: #f9fafb;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 24px;
+    margin-top: 16px;
+}
 
-        .links {
-            margin-top: 64px;
-            padding-top: 32px;
-            border-top: 1px solid var(--border);
-        }
+.stat-card strong {
+    display: block;
+    font-size: 1.3rem;
+    color: var(--accent);
+    margin-bottom: 6px;
+}
 
-        .btn {
-            display: inline-block;
-            margin-right: 32px;
-            margin-bottom: 16px;
-            color: var(--text-main);
-            text-decoration: none;
-            font-size: 0.9rem;
-            font-weight: 600;
-            transition: all 0.2s ease;
-        }
+.stat-card p {
+    margin: 0;
+    font-size: 0.9rem;
+}
 
-        .btn:hover {
-            color: var(--accent);
-            transform: translateX(4px);
-        }
+.links {
+    border-top: 1px solid var(--border);
+    padding-top: 24px;
+    margin-top: 32px;
+}
 
-        .btn span {
-            margin-left: 6px;
-            font-weight: 400;
-            opacity: 0.4;
-        }
+.btn {
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 12px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text-main);
+    text-decoration: none;
+    transition: 0.2s ease;
+}
 
-        footer {
-            margin-top: 80px;
-            font-size: 0.75rem;
-            color: #999;
-            letter-spacing: 0.02em;
-        }
+.btn:hover {
+    color: var(--accent);
+}
 
-        @media (max-width: 480px) {
-            h1 { font-size: 2rem; }
-            .wrapper { padding: 40px 20px; }
-        }
-    </style>
+footer {
+    margin-top: 40px;
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    text-align: center;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 32px 20px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+}
+</style>
 </head>
+
 <body>
 
-<div class="wrapper">
-    <header>
-        <span class="brand">Stanhope Mews Surgery [cite: 1]</span>
-        <h1>Childhood Vaccination FAQ</h1>
-        <p class="intro">It is normal to have questions about medication given to your child, and vaccines are no exception[cite: 2]. Here are answers to the most common questions[cite: 3].</p>
-    </header>
+<div class="container">
 
-    <section>
-        <h2>Why should I have my child vaccinated?</h2>
-        <p>Herd immunity does not protect against all diseases[cite: 5]. For example, tetanus is caught from bacteria in the environment rather than from other people[cite: 6].</p>
-        <p>For herd immunity to work, most people need to be vaccinated[cite: 7]. Low vaccination rates in some UK communities and overseas mean unvaccinated children are likely to encounter others without protection[cite: 8, 9]. This allows infectious diseases to spread quickly, as seen in the 2013 measles outbreak in Wales[cite: 10].</p>
-    </section>
+<header>
+    <span class="brand">Stanhope Mews Surgery</span>
+    <h1>Childhood Vaccination FAQ</h1>
+    <p class="intro">
+        It is normal to have questions about medication given to your child, and vaccines are no exception. Here are answers to the most common questions.
+    </p>
+</header>
 
-    <section>
-        <h2>Immune System Capacity</h2>
-        <p>Even a tiny baby's immune system can easily cope with several vaccines at once[cite: 13]. From birth, babies come into contact with millions of germs every day[cite: 14].</p>
-        
-        <div class="stat-card">
-            <strong>1/1000th Effort</strong>
-            <p>It is estimated that giving 11 vaccines at once would only use about a thousandth of a child's immune system capacity[cite: 16]. Spreading out the load is not recommended as it leaves children unprotected for longer[cite: 17].</p>
-        </div>
-    </section>
+<section>
+    <h2>Why should I have my child vaccinated?</h2>
+    <p>
+        Herd immunity does not protect against all diseases. For example, tetanus is caught from bacteria in the environment rather than from other people.
+    </p>
+    <p>
+        For herd immunity to work, most people need to be vaccinated. Low vaccination rates in some communities mean unvaccinated children are more likely to encounter others without protection. This allows infectious diseases to spread quickly.
+    </p>
+</section>
 
-    <section>
-        <h2>Safety & Testing Standards</h2>
-        <p>All vaccines undergo long and thorough development and testing before being licensed[cite: 19]. They are tested on adults and children separately because vaccines can work differently in different age groups[cite: 20, 21]. Crucially, no vaccines are tested on children before being fully tested on adults[cite: 22].</p>
-    </section>
+<section>
+    <h2>Immune System Capacity</h2>
+    <p>
+        Even a tiny baby's immune system can easily cope with several vaccines at once. From birth, babies come into contact with millions of germs every day.
+    </p>
 
-    <div class="links">
-        <a href="#" class="btn">Safety & Side Effects [cite: 23] <span>&rarr;</span></a>
-        <a href="#" class="btn">Common Questions [cite: 25] <span>&rarr;</span></a>
+    <div class="stat-card">
+        <strong>1/1000th Effort</strong>
+        <p>
+            Giving multiple vaccines at once uses only a tiny fraction of a child's immune system capacity. Spreading vaccines out is not recommended as it leaves children unprotected for longer.
+        </p>
     </div>
+</section>
 
-    <footer>
-        &copy; 2026 Stanhope Mews Surgery
-    </footer>
+<section>
+    <h2>Safety & Testing Standards</h2>
+    <p>
+        All vaccines undergo long and thorough development and testing before being licensed. They are tested on adults and children separately because vaccines can work differently across age groups. No vaccines are tested on children before being fully tested on adults.
+    </p>
+</section>
+
+<div class="links">
+    <a href="#" class="btn">Safety & Side Effects →</a>
+    <a href="#" class="btn">Common Questions →</a>
+</div>
+
+<footer>
+    © 2026 Stanhope Mews Surgery
+</footer>
+
 </div>
 
 </body>
